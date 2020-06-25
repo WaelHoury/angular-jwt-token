@@ -1,0 +1,33 @@
+<body>
+<div class="row">
+  <div class="col-md-6 mx-auto p-0">
+      <div class="card">
+          <div class="login-box">
+              <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                  <div class="login-space">
+                      <div class="login">
+                          <div class="group"> <label  for="user" class="label">Username</label> <input #user1 id="user" type="text" class="input" placeholder="Enter your username"/> </div>
+                          <div class="group"> <label for="pass" class="label">Password</label> <input #pass1 id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"/> </div>
+                          <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                        <div class="group"> <button (click)="log(user1.value,pass1.value) ">Login</button> </div>
+                          <div class="hr"></div>
+                          <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                      </div>
+                      <div class="sign-up-form">
+                          <div class="group"> <label for="user" class="label">Username</label> <input #user id="user1" type="text" class="input" placeholder="Create your Username"> </div>
+                          <div class="group"> <label for="pass" class="label">Password</label> <input #pass id="pass1" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                          <div class="group"> <label for="pass" class="label">E-mail</label> <input #email id="email" type="text" class="input"  placeholder="Enter your E-mail"> </div>
+                          <div class="group"> <label for="pass" class="label">phone</label> <input #phone id="phone" type="text"  class="input" placeholder="Enter your Phone Number"> </div>
+                          <div class="group"> <label for="pass" class="label">Departmentid</label> <input #dept id="dept" type="text" class="input" placeholder="Enter your Department id"> </div>
+                          <div class="group"> <label for="pass" class="label">RoleName</label> <input #role id="role" type="text" class="input" placeholder="Enter your role"> </div>
+                          <div class="group"><button (click)="sign(user.value,pass.value,email.value,Number(phone.value),Number(dept.value),role.value) ">signup</button> </div>
+                          <div class="hr"></div>
+                          <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
