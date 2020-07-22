@@ -23,10 +23,13 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/hashing.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -121,4 +124,5 @@
       }
     }},
   "defaultProject": "login-tokens"
+
 }
